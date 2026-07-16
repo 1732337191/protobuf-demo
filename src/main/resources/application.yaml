@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: protobuf-demo
+
+# 8888端口
+server:
+  port: 8888
