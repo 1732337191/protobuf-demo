@@ -2,8 +2,10 @@ REST + Protobuf 方案
 作为 REST API 的数据交换格式（替代 JSON，Content-Type 为 application/x-protobuf）
 # .proto生成.java
 使用protobuf-maven-plugin插件生成.java文件，具体步骤如下：
-1. 在pom.xml文件中添加protobuf-maven-plugin插件配置
-2. 运行mvn compile命令
+1. 已在pom.xml文件中添加protobuf-maven-plugin插件配置
+2. 运行mvn compile命令即可生成.java文件
+3. 生成的.java文件位于 由outputDirectory + proto文件指定的java_package拼接而成
+   ${project.basedir}/src/main/java/com.ltgame.protobufdemo.proto.UserProto.java
 
 # 测试
 - 测试 getUser 返回 Protobuf 格式
